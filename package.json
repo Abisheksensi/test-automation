@@ -1,0 +1,30 @@
+{
+  "name": "test-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abisheksensi/test-automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abisheksensi/test-automation/issues"
+  },
+  "homepage": "https://github.com/Abisheksensi/test-automation#readme",
+  "devDependencies": {
+    "chai": "^6.2.0",
+    "chromedriver": "^141.0.0",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.2.3",
+    "mocha": "^11.7.4",
+    "nyc": "^17.1.0",
+    "selenium-webdriver": "^4.36.0",
+    "supertest": "^7.1.4"
+  }
+}
