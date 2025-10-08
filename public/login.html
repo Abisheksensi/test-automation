@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+</head>
+<body>
+  <h1>Login Page</h1>
+  <input id="email" type="email" placeholder="Email" />
+  <input id="password" type="password" placeholder="Password" />
+  <button id="loginBtn">Login</button>
+  <p id="successMessage" style="display:none">Login successful</p>
+
+  <script>
+    document.getElementById('loginBtn').addEventListener('click', () => {
+      document.getElementById('successMessage').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cross-env NODE_ENV=test mocha --timeout 10000",
+    "test:ui": "cross-env NODE_ENV=test mocha test/ui --timeout 15000",
+    "test:api": "cross-env NODE_ENV=test mocha test/api --timeout 10000"
   },
   "repository": {
     "type": "git",
@@ -19,12 +21,16 @@
   "homepage": "https://github.com/Abisheksensi/test-automation#readme",
   "devDependencies": {
     "chai": "^6.2.0",
-    "chromedriver": "^141.0.0",
     "cross-env": "^10.1.0",
     "dotenv": "^17.2.3",
     "mocha": "^11.7.4",
     "nyc": "^17.1.0",
+    "puppeteer": "^24.23.0",
     "selenium-webdriver": "^4.36.0",
     "supertest": "^7.1.4"
+  },
+  "dependencies": {
+    "chromedriver": "^140.0.0",
+    "express": "^5.1.0"
   }
 }
